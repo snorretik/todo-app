@@ -8,41 +8,51 @@
 </head>
 <body>
     <div id="container">
-        <h1>To do app!</h1>
+        <div id="firstHalf">
+            <h1>To do app!</h1>
 
-        <div id="create">
-            <div id="rowOne">
-                <h2 id="titleHeading">Title</h2>
-                <h2 id="dueHeading">Due date</h2>
-                <h2 id="makeHeading">Make</h2>
-            </div>
-            <div id="rowTwo">
-                <input type="text" id="title">
-                <input type="text" id="due">
-                <button id="make">+</button>
-            </div>
-            <div id="rowThree">
-                <h2 id="describHeading">Description</h2>
-                <h2 id="projectNameHeading">Project name</h2>
-            </div>
-            <div id="rowFour">
-                <input type="text" id="describ">
-                <input type="text" id="projectName">
-            </div>
-            <div id="rowFive">
-                <h2 id="priorityHeading">Priority</h2>
-            </div>
-            <div id="rowSix">
-                <select id="priority">
-                    <option id="yellowPrio">yellow</option>
-                    <option id="orangePrio">orange</option>
-                    <option id="redPrio">red</option>
-                </select>
+            <div id="create">
+                <div id="firstRowOne">
+                    <h2 id="titleHeading">Title</h2>
+                    <h2 id="dueHeading">Due date</h2>
+                    <h2 id="makeHeading">Make</h2>
+                </div>
+                <div id="firstRowTwo">
+                    <input type="text" id="title">
+                    <input type="text" id="due">
+                    <button id="make">+</button>
+                </div>
+                <div id="firstRowThree">
+                    <h2 id="describHeading">Description</h2>
+                    <h2 id="projectNameHeading">Project name</h2>
+                </div>
+                <div id="firstRowFour">
+                    <input type="text" id="describ">
+                    <input type="text" id="projectName">
+                </div>
+                <div id="firstRowFive">
+                    <h2 id="priorityHeading">Priority</h2>
+                </div>
+                <div id="firstRowSix">
+                    <select id="priority">
+                        <option id="yellowPrio">yellow</option>
+                        <option id="orangePrio">orange</option>
+                        <option id="redPrio">red</option>
+                    </select>
+                </div>
             </div>
         </div>
-
-        <div id="list-grid">
-
+        <div id="lastHalf">
+            <div id="list-grid">
+                <div id="lastRowOne">
+                    <h2>Project</h2>
+                </div>
+                <div id="lastRowTwo">
+                    <select id="projects">
+                        <option id="main">main</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
     <script src="javascript/myscript.js"></script>
