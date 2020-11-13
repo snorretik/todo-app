@@ -140,6 +140,10 @@ let variableExport = (() => {
 
         let listEl = document.querySelector("#list-grid");
 
+        while (listEl.firstChild) {
+            listEl.removeChild(listEl.firstChild);
+        }
+
         for (let i = 0; i < verzameling[selectedListVal].length; i++) {
             let label1 = document.createElement('label');
             label1.setAttribute("id", `titleNo${i + 1}`);
@@ -151,12 +155,13 @@ let variableExport = (() => {
 
             let button1 = document.createElement('button');
             button1.setAttribute("id", `priorityNo${i + 1}`);
+            button1.setAttribute("class", "listPriorities");
             button1.style.backgroundColor = `${verzameling[selectedListVal][i].priorityVal}`
             // event listener van button1
 
             let button2 = document.createElement('button');
             button2.setAttribute("id", `expandNo${i + 1}`);
-            button2.textContent = "expand";
+            button2.textContent = "\\/";
 
             listEl.appendChild(label1);
             listEl.appendChild(label2);

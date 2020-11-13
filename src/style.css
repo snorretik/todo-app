@@ -118,5 +118,9 @@ h2 {
 
 #list-grid {
     display: grid;
-    grid-template-columns: 150px 100px 50px 75px;
+    grid-template-columns: 350px 125px 50px 30px;
+}
+
+.listPriorities {
+    width: 25px;
 }
