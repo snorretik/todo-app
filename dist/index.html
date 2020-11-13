@@ -4,7 +4,7 @@
     <title>To do app</title>
     <meta charset="UTF-8">
 
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="../src/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="container">
@@ -19,7 +19,7 @@
                 </div>
                 <div id="firstRowTwo">
                     <input type="text" id="title">
-                    <input type="text" id="due">
+                    <input type="text" id="due" placeholder="dd-mm-yyyy">
                     <button id="make">+</button>
                 </div>
                 <div id="firstRowThree">
@@ -35,9 +35,9 @@
                 </div>
                 <div id="firstRowSix">
                     <select id="priority">
-                        <option id="yellowPrio">yellow</option>
-                        <option id="orangePrio">orange</option>
-                        <option id="redPrio">red</option>
+                        <option id="yellowPrio" value="yellow">yellow</option>
+                        <option id="orangePrio" value="orange">orange</option>
+                        <option id="redPrio" value="red">red</option>
                     </select>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                 </div>
                 <div id="lastRowTwo">
                     <select id="projects">
-                        <option id="projectno1" value="main">main</option>
+                        <option class="projectClass" value="main">main</option>
                     </select>
                 </div>
                 <div id="lastRowThree">
@@ -61,6 +61,6 @@
             </div>
         </div>
     </div>
-    <script src="javascript/myscript.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

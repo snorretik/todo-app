@@ -115,3 +115,8 @@ h2 {
 #projects {
     width: 150px;
 }
+
+#list-grid {
+    display: grid;
+    grid-template-columns: 150px 100px 50px 75px;
+}
