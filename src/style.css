@@ -118,9 +118,39 @@ h2 {
 
 #list-grid {
     display: grid;
-    grid-template-columns: 350px 125px 50px 30px;
+    grid-template-columns: 350px 125px 40px 50px 25px;
+    grid-row-gap: 5px;
+}
+
+.titleDis {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.dateDis {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .listPriorities {
+    grid-column-start: 3;
+    grid-column-end: 4;
     width: 25px;
+}
+
+.expandDis {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.checkDis {
+    margin-left: 10px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.deleteButtons {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    width: 40px;
 }
